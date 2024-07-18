@@ -1,3 +1,4 @@
+import 'package:custom_widget/Widgets/richText.dart';
 import 'package:custom_widget/Widgets/rounded_btn.dart';
 import 'package:custom_widget/Widgets/sizeboxed_widget.dart';
 import 'package:custom_widget/Widgets/wrap_widget.dart';
@@ -65,7 +66,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("My Custom Widget"),
       ),
       // body: WrapWidget(),
-      body: SizeboxedWidget(),
+      body: RichtextWidget(),
+      // body: SizeboxedWidget(),
 
       // body: Center(
       //   child: Column(
