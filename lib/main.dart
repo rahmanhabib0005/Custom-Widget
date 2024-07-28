@@ -1,8 +1,10 @@
+import 'package:custom_widget/Widgets/font_awesome.dart';
 import 'package:custom_widget/Widgets/richText.dart';
 import 'package:custom_widget/Widgets/rounded_btn.dart';
 import 'package:custom_widget/Widgets/sizeboxed_widget.dart';
 import 'package:custom_widget/Widgets/wrap_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,7 +68,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("My Custom Widget"),
       ),
       // body: WrapWidget(),
-      body: RichtextWidget(),
+      // body: RichtextWidget(),
+      // body: RichtextWidget(),
+      body: FontAwesome(),
       // body: SizeboxedWidget(),
 
       // body: Center(
