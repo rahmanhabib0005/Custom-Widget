@@ -1,4 +1,5 @@
 import 'package:custom_widget/Widgets/font_awesome.dart';
+import 'package:custom_widget/Widgets/position.dart';
 import 'package:custom_widget/Widgets/richText.dart';
 import 'package:custom_widget/Widgets/rounded_btn.dart';
 import 'package:custom_widget/Widgets/sizeboxed_widget.dart';
@@ -70,7 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
       // body: WrapWidget(),
       // body: RichtextWidget(),
       // body: RichtextWidget(),
-      body: FontAwesome(),
+      body: PositionWidget(),
+      // body: FontAwesome(),
       // body: SizeboxedWidget(),
 
       // body: Center(
