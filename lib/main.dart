@@ -1,3 +1,4 @@
+import 'package:custom_widget/Widgets/constraint.dart';
 import 'package:custom_widget/Widgets/font_awesome.dart';
 import 'package:custom_widget/Widgets/position.dart';
 import 'package:custom_widget/Widgets/richText.dart';
@@ -70,8 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       // body: WrapWidget(),
       // body: RichtextWidget(),
-      // body: RichtextWidget(),
-      body: PositionWidget(),
+      // body: PositionWidget(),
+      // body:
+      body: Constraint(),
       // body: FontAwesome(),
       // body: SizeboxedWidget(),
 
