@@ -6,6 +6,7 @@ import 'package:custom_widget/Widgets/richText.dart';
 import 'package:custom_widget/Widgets/rounded_btn.dart';
 import 'package:custom_widget/Widgets/secondScreeen.dart';
 import 'package:custom_widget/Widgets/sizeboxed_widget.dart';
+import 'package:custom_widget/Widgets/splashScreen.dart';
 import 'package:custom_widget/Widgets/wrap_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Secondscreeen(),
+      home: Splashscreen(),
     );
   }
 }
@@ -77,6 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
       // body: PositionWidget(),
       // body:
       body: Multiple(),
+      // body: Splashscreen(),
       // body: Constraint(),
       // body: FontAwesome(),
       // body: SizeboxedWidget(),
