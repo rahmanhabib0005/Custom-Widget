@@ -35,7 +35,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  var nameFrom;
+  MyHomePage(this.nameFrom);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -46,14 +47,16 @@ class MyHomePage extends StatefulWidget {
   // used by the build method of the State. Fields in a Widget subclass are
   // always marked "final".
 
-  final String title;
-
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePage> createState() => _MyHomePageState(nameFrom);
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+
+  var name;
+
+  _MyHomePageState(this.name);
 
   void _incrementCounter() {
     setState(() {
@@ -71,13 +74,13 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("My Custom Widget"),
+        title: const Text("My Custom Widget"),
       ),
       // body: WrapWidget(),
       // body: RichtextWidget(),
       // body: PositionWidget(),
       // body:
-      body: Multiple(),
+      body: Multiple(name),
       // body: Splashscreen(),
       // body: Constraint(),
       // body: FontAwesome(),

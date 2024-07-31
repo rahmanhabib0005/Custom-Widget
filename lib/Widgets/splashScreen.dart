@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:custom_widget/Widgets/secondScreeen.dart';
 import 'package:custom_widget/main.dart';
 import 'package:flutter/material.dart';
 
@@ -15,9 +16,7 @@ class _SplashScreenState extends State<Splashscreen> {
 
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-              builder: (context) => MyHomePage(title: 'Working')));
+          context, MaterialPageRoute(builder: (context) => Secondscreeen()));
     });
   }
 
